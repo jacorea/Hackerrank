@@ -1,0 +1,422 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191015.094404.24904.0.001.json",
+    "dumpEventTime": "2019-10-15T09:44:04Z",
+    "dumpEventTimeStamp": "1571157844457",
+    "processId": 24904,
+    "cwd": "C:\\Users\\jonat\\Desktop\\Projects\\hackerrank",
+    "commandLine": [
+      "node",
+      "gradingStudents.js"
+    ],
+    "nodejsVersion": "v12.8.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.8.0",
+      "v8": "7.5.288.22-node.16",
+      "uv": "1.30.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.1",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.8.0/node-v12.8.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.8.0/node-v12.8.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.8.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.18362",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2712,
+        "user": 13866312,
+        "nice": 0,
+        "sys": 14151484,
+        "idle": 210132203,
+        "irq": 2066375
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2712,
+        "user": 14400265,
+        "nice": 0,
+        "sys": 12178796,
+        "idle": 211570703,
+        "irq": 146015
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2712,
+        "user": 16421906,
+        "nice": 0,
+        "sys": 12830406,
+        "idle": 208897437,
+        "irq": 137156
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz",
+        "speed": 2712,
+        "user": 17506875,
+        "nice": 0,
+        "sys": 13551484,
+        "idle": 207091375,
+        "irq": 93859
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "84:ef:18:c9:a1:3f",
+        "address": "fe80::3ce3:3c9c:dc0a:c093",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "84:ef:18:c9:a1:3f",
+        "address": "192.168.1.9",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "DESKTOP-2692P1O"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff799d76d99",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff799d7b38c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28780"
+    },
+    {
+      "pc": "0x00007ff799d7a338",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24600"
+    },
+    {
+      "pc": "0x00007ff799e64f3b",
+      "symbol": "v8::base::CPU::has_sse+37691"
+    },
+    {
+      "pc": "0x00007ff79a64bc1e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff79a633f6a",
+      "symbol": "v8::SharedArrayBuffer::Externalize+842"
+    },
+    {
+      "pc": "0x00007ff79a4c567c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff79a4d92ad",
+      "symbol": "v8::internal::Factory::AllocateRawFixedArray+61"
+    },
+    {
+      "pc": "0x00007ff79a4e0d74",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller+52"
+    },
+    {
+      "pc": "0x00007ff79a4e0d31",
+      "symbol": "v8::internal::Factory::NewFixedArray+65"
+    },
+    {
+      "pc": "0x00007ff79a52e69e",
+      "symbol": "v8::debug::Script::GetIsolate+6478"
+    },
+    {
+      "pc": "0x00007ff79a2c2663",
+      "symbol": "v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+181731"
+    },
+    {
+      "pc": "0x00007ff79aa6b06d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+614605"
+    },
+    {
+      "pc": "0x00000012a650452e",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2697129984,
+    "totalCommittedMemory": 2697129984,
+    "usedMemory": 2662235928,
+    "availableMemory": 16987120,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16757248,
+        "used": 0,
+        "available": 16757248
+      },
+      "old_space": {
+        "memorySize": 1978368,
+        "committedMemory": 1978368,
+        "capacity": 1301488,
+        "used": 1301488,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 425984,
+        "capacity": 154816,
+        "used": 154816,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 266240,
+        "capacity": 166160,
+        "used": 166160,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1758081024,
+        "committedMemory": 1758081024,
+        "capacity": 1758067168,
+        "used": 1758067168,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3456,
+        "used": 3456,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 1.906,
+    "kernelCpuSeconds": 1.234,
+    "cpuConsumptionPercent": 104.667,
+    "maxRss": 2709975040,
+    "pageFaults": {
+      "IORequired": 675259,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 2,
+      "writes": 1
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=::": "::\\",
+    "=C:": "C:\\Users\\jonat\\Desktop\\Projects\\hackerrank",
+    "=ExitCode": "00000086",
+    "aliases": "C:\\Users\\jonat\\Downloads\\cmder\\config\\user_aliases.cmd",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "ANSICON": "173x1000 (173x39)",
+    "ANSICON_DEF": "7",
+    "APPDATA": "C:\\Users\\jonat\\AppData\\Roaming",
+    "architecture": "64",
+    "architecture_bits": "64",
+    "asl.log=Destination": "file",
+    "ccall": "call C:\\Users\\jonat\\Downloads\\cmder\\vendor\\bin\\cexec.cmd",
+    "cexec": "C:\\Users\\jonat\\Downloads\\cmder\\vendor\\bin\\cexec.cmd",
+    "ChocolateyInstall": "C:\\ProgramData\\chocolatey",
+    "ChocolateyLastPathUpdate": "Mon Nov  5 12:17:23 2018",
+    "CMDER_ALIASES": "1",
+    "CMDER_CLINK": "1",
+    "CMDER_CONFIGURED": "1",
+    "CMDER_INIT_END": "22:15:55.29",
+    "CMDER_INIT_START": "22:15:48.64",
+    "CMDER_ROOT": "C:\\Users\\jonat\\Downloads\\cmder",
+    "CMDER_SHELL": "cmd",
+    "CMDER_USER_FLAGS": " ",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-2692P1O",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "ConEmuANSI": "ON",
+    "ConEmuAnsiLog": "",
+    "ConEmuArgs": "/Icon \"C:\\Users\\jonat\\Downloads\\cmder\\icons\\cmder.ico\" /Title Cmder",
+    "ConEmuArgs2": "",
+    "ConEmuBackHWND": "0x001700CE",
+    "ConEmuBaseDir": "C:\\Users\\jonat\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBaseDirShort": "C:\\Users\\jonat\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu",
+    "ConEmuBuild": "180626",
+    "ConEmuCfgDir": "C:\\Users\\jonat\\Downloads\\cmder\\vendor\\conemu-maximus5",
+    "ConEmuConfig": "",
+    "ConEmuDir": "C:\\Users\\jonat\\Downloads\\cmder\\vendor\\conemu-maximus5",
+    "ConEmuDrawHWND": "0x000C05D2",
+    "ConEmuDrive": "C:",
+    "ConEmuHooks": "Enabled",
+    "ConEmuHWND": "0x00110394",
+    "ConEmuPalette": "Monokai",
+    "ConEmuPID": "13384",
+    "ConEmuServerPID": "4524",
+    "ConEmuTask": "{cmd::Cmder}",
+    "ConEmuWorkDir": "C:\\Users\\jonat\\Downloads\\cmder",
+    "ConEmuWorkDrive": "C:",
+    "debug_output": "0",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "fast_init": "0",
+    "feFlagName": " ",
+    "GIT_INSTALL_ROOT": "C:\\Users\\jonat\\Downloads\\cmder\\vendor\\git-for-windows",
+    "GRADLE_HOME": "C:\\gradle",
+    "HOME": "C:\\Users\\jonat",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\jonat",
+    "IntelliJ IDEA Community Edition": "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.1.3\\bin;",
+    "LANG": "en_US.UTF-8",
+    "lib_base": "call \"C:\\Users\\jonat\\Downloads\\cmder\\vendor\\lib\\lib_base.cmd\"",
+    "lib_console": "call \"C:\\Users\\jonat\\Downloads\\cmder\\vendor\\lib\\lib_console.cmd\"",
+    "lib_git": "call \"C:\\Users\\jonat\\Downloads\\cmder\\vendor\\lib\\lib_git.cmd\"",
+    "lib_path": "call \"C:\\Users\\jonat\\Downloads\\cmder\\vendor\\lib\\lib_path.cmd\"",
+    "lib_profile": "call \"C:\\Users\\jonat\\Downloads\\cmder\\vendor\\lib\\lib_profile.cmd\"",
+    "LOCALAPPDATA": "C:\\Users\\jonat\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-2692P1O",
+    "max_depth": "1",
+    "nix_tools": "1",
+    "NUMBER_OF_PROCESSORS": "4",
+    "NVM_HOME": "C:\\Users\\jonat\\AppData\\Roaming\\nvm",
+    "NVM_SYMLINK": "C:\\Program Files\\nodejs",
+    "OneDrive": "C:\\Users\\jonat\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\jonat\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\jonat\\Downloads\\cmder\\bin;C:\\Users\\jonat\\Downloads\\cmder\\vendor\\bin;C:\\Users\\jonat\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu\\Scripts;C:\\Users\\jonat\\Downloads\\cmder\\vendor\\conemu-maximus5;C:\\Users\\jonat\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Boxstarter;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Gradle\\gradle-5.4.1\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\jonat\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\;C:\\Users\\jonat\\AppData\\Local\\Programs\\Python\\Python37-32\\;C:\\Users\\jonat\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jonat\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\jonat\\AppData\\Roaming\\npm;C:\\Users\\jonat\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\jonat\\.rbenv-win\\bin;C:\\Users\\jonat\\.rben;C:\\Program Files\\Git\\cmd;C:\\Users\\jonat\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files\\Amazon\\AWSCLI\\bin\\;C:\\Program Files (x86)\\Gow\\bin;C:\\Program Files\\Java\\jdk1.8.0_211\\bin;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\140\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\150\\DTS\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Ruby25-x64\\bin;C:\\Users\\jonat\\.rbenv-win\\bin;C:\\Users\\jonat\\.rbenv-win\\shims;_SZ    C:\\Users\\jonat\\.rbenv-win\\bin;_SZ    C:\\Users\\jonat\\AppData\\Local\\Programs\\Python\\Python37-32\\Scripts\\;C:\\Users\\jonat\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jonat\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\jonat\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\jonat\\AppData\\Local\\Yarn\\bin;C:\\Program Files\\heroku\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2019.1.3\\bin;C:\\Users\\jonat\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\jonat\\Downloads\\cmder\\vendor\\git-for-windows\\cmd;C:\\Users\\jonat\\Downloads\\cmder\\vendor\\git-for-windows\\mingw64\\bin;C:\\Users\\jonat\\Downloads\\cmder\\vendor\\git-for-windows\\usr\\bin;C:\\Users\\jonat\\Downloads\\cmder",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "8e09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "C\bL\bI\bN\bK\b \b$P$G",
+    "PSModulePath": "C:\\Users\\jonat\\OneDrive\\Documents\\WindowsPowerShell\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "RBENV_ROOT": "C:\\Users\\jonat\\.rbenv-win",
+    "SESSIONNAME": "Console",
+    "SVN_SSH": "C:\\\\Users\\\\jonat\\\\Downloads\\\\cmder\\\\vendor\\\\git-for-windows\\\\bin\\\\ssh.exe",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\jonat\\AppData\\Local\\Temp",
+    "TERM": "cygwin",
+    "time_init": "0",
+    "TMP": "C:\\Users\\jonat\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-2692P1O",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-2692P1O",
+    "USERNAME": "jonat",
+    "USERPROFILE": "C:\\Users\\jonat",
+    "user_aliases": "C:\\Users\\jonat\\Downloads\\cmder\\config\\user_aliases.cmd",
+    "verbose_output": "0",
+    "windir": "C:\\WINDOWS"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\MSASN1.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\System32\\profapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\SYSTEM32\\winmmbase.dll",
+    "C:\\WINDOWS\\System32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\System32\\bcryptPrimitives.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\Users\\jonat\\Downloads\\cmder\\vendor\\conemu-maximus5\\ConEmu\\ConEmuHk64.dll",
+    "C:\\WINDOWS\\System32\\powrprof.dll",
+    "C:\\WINDOWS\\System32\\UMPDC.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\System32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll"
+  ]
+}
